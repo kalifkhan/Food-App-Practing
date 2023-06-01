@@ -1,27 +1,13 @@
-import './App.css';
+import './App.css'
+import HeaderData from './Header/HeaderData';
+import ItemList from './ItemsList/ItemList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <HeaderData> </HeaderData>
+      <h2> Hello </h2>
+      <ItemList> </ItemList>
     </div>
   );
 }

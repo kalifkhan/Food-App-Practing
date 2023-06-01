@@ -1,0 +1,16 @@
+header-title{
+    color: red;
+    
+}
+.header-container{
+   
+    background-color: red;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+
+}
+.header-cart{
+    text-align: right;
+
+}
