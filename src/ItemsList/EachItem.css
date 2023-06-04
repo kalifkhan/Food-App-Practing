@@ -1,24 +1,27 @@
 .eachitem-container{
     color: blue;
-    
+    background-color: pink;
+    width: auto;
+    border-radius: 10px;
 }
 .each-item{
   
     border: solid palegoldenrod;
-    border-radius: 2px;
+    border-radius: 10px;
     text-align: left;
-    width: auto;
-    color: brown;
+   
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
     
 }
 .item-price{
     text-align: right;
     color: red;
-    
-    padding: 10px;
-    
+    margin: auto;
 
+}
+.eactitem-each{
+    margin: auto;
 }

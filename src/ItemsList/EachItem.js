@@ -14,7 +14,7 @@ function EachItem(props){
             <p className='eactitem-each'> {props.oneItem.descroption} </p>
             <p className='item-price'> {prize} </p>
             
-           <MealItemForm id={props.id} > </MealItemForm>
+           <MealItemForm id={props.id}  > </MealItemForm>
            </div>
             
             
