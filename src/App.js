@@ -3,6 +3,7 @@ import HeaderData from './Header/HeaderData';
 import ItemList from './ItemsList/ItemList';
 import Cart from './Header/Cart';
 import { useState } from 'react';
+import CartProvider from './store/CartProvider'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
 
   return (
+    <CartProvider>
     <div className="App">
      {cartIsShow && <Cart onHide={hideCartIsShow}> </Cart>}
       <HeaderData onShowCart={showCarthandle}> </HeaderData>
@@ -25,6 +27,7 @@ function App() {
       <h2> Hello </h2>
       <ItemList> </ItemList>
     </div>
+    </CartProvider>
   );
 }
 

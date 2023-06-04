@@ -50,7 +50,7 @@ function ItemList() {
 
     
 
-    const oneItem = eachitem.map((item) => <EachItem key={item.id} oneItem={item}> </EachItem>);
+    const oneItem = eachitem.map((item) => <EachItem key={item.id} id={item.id} oneItem={item}> </EachItem>);
         /*<li className="each-item"> {item.name}
             <p> {item.descroption}</p>
             <p className='item-price'> {item.price}</p>
