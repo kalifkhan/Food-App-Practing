@@ -17,7 +17,7 @@ function EachItem(props){
             id: props.id,
             name: props.oneItem.name,
             amount: amount,
-            price: props.oneItem.price,
+            price: props.oneItem.price ,
         });
 
     }

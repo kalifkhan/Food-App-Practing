@@ -34,14 +34,14 @@ const [amountIsValid , setAmountIsValid] = useState(true);
     input={{
         id: 'amount',
         type: 'number',
-        min: '1',
+        min: '0',
         max: '5',
         step: '1',
-        defaultValue: '1',
+        defaultValue: '0',
     }}
         />
         <button>+ ADD </button>
-        {!amountIsValid && <p> please enter the amount valid </p>}
+        {!amountIsValid && <p> please enter the valid amount</p>}
     </form>
 
 }
