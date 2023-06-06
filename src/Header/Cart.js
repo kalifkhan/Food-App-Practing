@@ -9,22 +9,27 @@ import CartItem from './Cartitem';
 const Cart = props =>{
     const cartCtx = useContext(CartContext);
 
-    
-
     // const cartX = [{
     //     id: 'c1',
     //     name: 'curry' , 
     //     amount: 4,
     //     price: 20
     // }];
+
     const cartTotalAmount = `${cartCtx.totalAmount.toFixed(2)}`;
 
     const hasCart = cartCtx.items.length >0;
-    const cartRemoveItemhandler =(id)=>{}
-    const cartAddItemhandler =(otem)=>{}
+
+
+    const cartRemoveItemhandler =(id)=>{ 
+        cartCtx.removeItem( id);
+       }
+    const cartAddItemhandler =(item)=>{
+        cartCtx.addItem({...item, amount:1});
+    }
 
     const yourcartItems = cartCtx.items.map((item) => 
-    <CartItem key={item.id} name ={item.name} amount={item.props} price={item.price} 
+    <CartItem key={item.id} name ={item.name} amount={item.amount} price={item.price} 
     onRemove={cartRemoveItemhandler.bind(null , item.id)} 
     onAdd={cartAddItemhandler.bind(null, item)}> 
 
