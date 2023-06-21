@@ -3,10 +3,12 @@ import './EachItem.css';
 import MealItemForm from './MealItemForm';
 import { useContext } from 'react';
 import CartContext from '../store/cart-context';
+import FavCartContext from '../Store_2/FavCartContext';
 
 
 function EachItem(props){
    const cartCtx = useContext(CartContext);
+    const favCtx = useContext(FavCartContext);
 
 
     const prize = `$${props.oneItem.price}` ;
@@ -21,6 +23,7 @@ function EachItem(props){
         });
 
     }
+   
 
     return <div className='eachitem-container'> 
             <div className="each-item">

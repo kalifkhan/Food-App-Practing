@@ -27,6 +27,15 @@ const [amountIsValid , setAmountIsValid] = useState(true);
         props.onAddToCart(enterNumber);
     }
    
+    const favHandle=(event)=>{
+        event.preventDefault();
+        const curValue= event.target.value;
+
+        console.log(curValue);
+        console.log("cur value of Favorite")
+
+    }
+
     return <form className='form' onSubmit={addItemToCart}>
         <Input
         ref={amountInputRef}
@@ -41,6 +50,7 @@ const [amountIsValid , setAmountIsValid] = useState(true);
     }}
         />
         <button>+ ADD </button>
+        <button onClick={favHandle}> fav </button>
         {!amountIsValid && <p> please enter the valid amount</p>}
     </form>
 
