@@ -28,15 +28,12 @@ function App() {
      {cartIsShow && <Cart onHide={hideCartIsShow}> </Cart>}
       <HeaderData onShowCart={showCarthandle}> </HeaderData>
       
-      <h2> Hello </h2>
+      
       <ItemList> </ItemList> 
     
     </CartProvider>
-    <h2> helelde,e </h2>
-    <FavCartReducer> 
-      
-      <Favorite> </Favorite> 
-    </FavCartReducer>
+    
+    
     </div>
     </Fragment>
   );

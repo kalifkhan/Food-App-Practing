@@ -58,7 +58,7 @@ function ItemList() {
             */
 
     return <div>
-        <h2>Item list </h2>
+        
         <div className='item-container'>
             <ul>
                 <p>{oneItem} </p>
