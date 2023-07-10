@@ -4,13 +4,15 @@ header-title{
 }
 .header-container{
    
-    background-color: rgb(212, 184, 212);
-    width: 90%;
+    background-color: rgb(179, 232, 100);
+    width: 100%;
     padding: 10px;
     margin: auto;
+
 
 }
 .header-cart{
     text-align: right;
+    padding: 10px;
 
 }
